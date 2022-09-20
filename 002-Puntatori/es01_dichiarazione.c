@@ -12,8 +12,8 @@ int main(void) {
   int *p=&i; //int *p; p=&i;
   printf("int *p=&i; //int *p; p=&i; \n");
   printf("int *p=&i; - Dichiarazione del puntatore p e assegnazione dell'indirizzo di i \n");
-  printf("  int *p; - Dichiarazione del puntatore p \n");
-  printf("  p=&i; - Assegnazione dell'indirizzo di i \n");
+  printf("int *p; - Dichiarazione del puntatore p \n");
+  printf("p=&i; - Assegnazione dell'indirizzo di i \n");
   printf("*p=i->%d - Contenuto della variabile puntata \n", *p);
   printf("p->%d - Indirizzo della variabile puntata \n", p);
   printf("&p->%d - Indirizzo del puntatore\n", &p);
