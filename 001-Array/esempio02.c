@@ -7,7 +7,7 @@ int main(void)
 {
 	//Dichiarazione e assegnazione di valori al vettore di interi vet
 	//Questo metodo di assegnazione si può fare solo in fase di dichiarazione
-	//I valori del vettore sono inizializzati tutti a zero 
+	//I valori del vettore sono inizializzati tutti a zero
 	int vet[5]={1, 2, 3};
 
 	//Stampa a schermo dei valori di vet[]
