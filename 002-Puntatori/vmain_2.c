@@ -1,18 +1,6 @@
 #include <stdio.h> //printf
 #include <string.h> 
-
-void printAscii() 
-{
-  int i=0;
-  for(i=32; i<=127; i++) 
-  {
-    printf("\nAscii code[%d], %x=%c", i,i,i);
-  }
-  printf("\n");
-  printf("\n");  
-}
-    
-     
+ 
 int main(int argc, char **argv) 
 //int main(int argc, char *argv[]) 
 {
@@ -21,7 +9,7 @@ int main(int argc, char **argv)
   printf("Numero di argomenti passati, argc=%d\n",argc);
   
   for(i=0;i < argc;++i) {
-    printf("argv[%d]:=%s\n",i,argv[i]);
+    printf("argv[%d]:=%s\n", i, argv[i]);
   }
   printf("\n");
 
@@ -37,7 +25,7 @@ int main(int argc, char **argv)
   char B[]="Mario";
   char C[30];
   
-  //msg1[2] = 10;   //Istruzione illegale perchè msg1 punta ad una stinga costante
+  //msg1[2] = 10;   //Istruzione illegale perchï¿½ msg1 punta ad una stinga costante
   msg2[3] = 'Z';
   msg2[4] = 65;
   msg2[8] = 0;
