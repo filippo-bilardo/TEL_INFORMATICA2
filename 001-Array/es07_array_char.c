@@ -29,6 +29,17 @@ int main(void)
 		printf("vet[%d]= %c\n", i, vet[i]);
 	}
     printf("\n");
-	
+
+	//stampare solo gli elementi dell'array che 
+	//costituiscono la parola "ciao"
+	printf("\nStampa a schermo elementi 'ciao' di vet[]\n");
+	//scorriamo con i tutti gli elementi del vettore
+    for(int i=0; i<26; i++) {
+		if(vet[i]=='c' || vet[i]=='i' || vet[i]=='a' || vet[i]=='o') {
+			printf("vet[%d]= %c\n", i, vet[i]);
+		}
+	}
+    printf("\n");
+
     return 0;
 } 
