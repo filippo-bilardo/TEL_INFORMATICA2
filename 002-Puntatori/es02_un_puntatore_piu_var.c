@@ -25,12 +25,15 @@ int main(void) {
 	printf("b=%X, *ptr=%X, &b=%X, ptr=%X \n", b, *ptr, &b, ptr);
 	printf("\n");
   
-  int c[]={0x3333,0x4444,0x5555}; //Dichiariamo c[] e gli assegnamo 3 valori
-  printf("int c[]={0x3333,0x4444,0x5555}; //Dichiariamo c[] e gli assegnamo 3 valori \n");
+  int c[]={0x3333,0x4444,0x5555,0x6666}; //Dichiariamo c[] e gli assegnamo 4 valori
+  printf("int c[]={0x3333,0x4444,0x5555,0x6666}; //Dichiariamo c[] e gli assegnamo 4 valori \n");
   ptr=&c[0]; //ptr=c //ptr punta alla base del vettore  
   printf("ptr=&c[0]; //ptr=c //ptr punta alla base del vettore \n");
   printf("ptr=%x, *ptr=%x \n", ptr, *ptr);
   ptr++; //incrementiamo ptr di una locazione di interi 
+  printf("ptr++; //incrementiamo ptr di una locazione di interi \n");
+  printf("ptr=%x, *ptr=%x \n", ptr, *ptr);
+  ptr=ptr+2; //incrementiamo ptr di locazioni locazione di interi 
   printf("ptr++; //incrementiamo ptr di una locazione di interi \n");
   printf("ptr=%x, *ptr=%x \n", ptr, *ptr);
 	printf("\n");
