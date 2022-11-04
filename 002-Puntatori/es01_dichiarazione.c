@@ -5,8 +5,8 @@ int main(void) {
 
   int i=2;
   printf("int i=2; - Dichiarazione della variabile i e assegnazione del valore 2 \n");
-  printf("i->%d - Contenuto della variabile i \n",i);
-  printf("&i->%d - Indirizzo della variabile i \n",&i);
+  printf("i->%d - Contenuto della variabile i \n", i);
+  printf("&i->%d - Indirizzo della variabile i \n", &i);
   printf("\n");
 
   int *p=&i; //int *p; p=&i;
@@ -19,7 +19,7 @@ int main(void) {
   printf("&p->%d - Indirizzo del puntatore\n", &p);
   printf("\n");
 
-  *p=33; //assegno 33 alla variabile puntata da p
+  *p=33; //assegno 33 alla variabile puntata da p; i=33
   printf("*p=33; //assegno 33 alla variabile puntata da p \n");
   printf("i=%d; *p=%d;\n", i, *p);
 
