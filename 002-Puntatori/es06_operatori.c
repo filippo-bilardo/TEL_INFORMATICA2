@@ -22,15 +22,15 @@ int main(void) {
 
   *ptr=0xbbbb; //con l'asterisco accediamo al valore di una variabile
 	printf("*ptr=0xbbbb; //con l'asterisco accediamo al valore di una variabile \n");
-  printf("*ptr=%x \n",*ptr);  
-  printf("a=%x \n",a);  
-  printf("*&a=%x\n",*&a);  
+	printf("*ptr=%x \n",*ptr);  
+	printf("a=%x \n",a);  
+	printf("*&a=%x\n",*&a);  
 	printf("\n");
 
 	printf("//con la e commerciale otteniamo un indirizzo \n");
-  printf("&a=%x\n",&a);  
-  printf("&*&a=%x\n",&*&a);  
-  printf("\n");  
+	printf("&a=%x\n",&a);  
+	printf("&*&a=%x\n",&*&a);  
+	printf("\n");  
 
 	return 0;
 } 
