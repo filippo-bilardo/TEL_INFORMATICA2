@@ -14,35 +14,42 @@ int main(void)
 	char vet2[10];
 	char vet3[10];
 
+
     //Copiamo i valori di vet1 in vet2
     //vet2 = vet1; //error: assignment to expression with array type
     for(int i=0;i<10;i++) {
 		vet2[i]=vet1[i];
 	}
+	//Copia stringa utilizzando la funzione strcpy
 	strcpy(vet3, vet1);
 
-	//Stampa a schermo dei valori di vet1 e vet2
-	printf("\nStampa a schermo dei valori di vet1[]\n");
+
+	//-----------------------------------------------------------
+	printf("\nStampa a schermo dei valori di vet1[] - come interi\n");
 	//scorriamo con i tutti gli elementi del vettore
 	for(int i=0;i<10;i++) {
 		printf("vet1[%d]= %d\n", i, vet1[i]);
 	}
-	printf("\nStampa a schermo dei valori di vet2[]\n");
-	//scorriamo con i tutti gli elementi del vettore
+	//-----------------------------------------------------------
+	printf("\nStampa a schermo dei valori di vet2[] - come interi\n");
+	printf("vet2 = {");
 	for(int i=0;i<10;i++) {
-		printf("vet2[%d]= %d\n", i, vet2[i]);
+		printf("%d", vet2[i]);
+		if(i<9) printf(", ");
 	}
-	printf("\nStampa a schermo dei valori di vet2[]=");
-	//scorriamo con i tutti gli elementi del vettore
-	for(int i=0;i<10;i++) {
-		printf("%c", vet2[i]);
-	}
-	printf("\nStampa a schermo dei valori di vet3[]=");
-	//scorriamo con i tutti gli elementi del vettore
+	printf("}\n");
+	//-----------------------------------------------------------
+	printf("\nStampa a schermo dei valori di vet2[] - Come char\n");
 	for(int i=0;i<10;i++) {
 		printf("%c", vet3[i]);
 	}
-	printf("\nStampa a schermo della stringa vet3[]=");
+	//-----------------------------------------------------------
+	printf("\nStampa a schermo dei valori di vet3[] - come char\n");
+	for(int i=0;i<10;i++) {
+		printf("%c", vet3[i]);
+	}
+	//-----------------------------------------------------------
+	printf("\nStampa a schermo della stringa vet3[]\n");
 	//nella printf usiamo %s per stampare la stringa
 	printf("%s", vet3);
 
