@@ -4,10 +4,12 @@
 #include <stdio.h>   //printf
 #include <string.h>  //strlen
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
   char str[30];
-  strcpy(str, "Ciao mondo");
+  //char* strcpy( char* dest, const char* src );
+  strcpy(&str[0], "Ciao mondo"); 
+  //strcpy(str, "Ciao mondo");  //https://en.cppreference.com/w/cpp/string/byte/strcpy
   printf("str[30]=%s\n", str);
   //la funzione strlen restituisce il numero di caratteri della stringa
   //escluso il carattere terminatore '\0'

@@ -13,7 +13,14 @@ int main(int argc, char *argv[]) {
   printf("str[]=");
   for(i=0; str[i]!='\0'; i++) 
     printf("%c", str[i]);
-  printf("Il vettore str[] contiene %d caratteri\n\n", i);
+  printf("\nIl vettore str[] contiene %d caratteri\n\n", i);
+  
+  i=0;
+  while(str[i]!='\0') {
+    printf("%c", str[i]);
+    i++;
+  } 
+  printf("\n");
   
   //stampiamo i singoli elementi del vettore
   for(i=0; str[i]!='\0'; i++) 
