@@ -4,12 +4,15 @@
 #include <stdio.h>   //printf
 #include <string.h>  //strcpy
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
     char stringa[]="Ciao";
+    char *ptrstr;
+    ptrstr = "Mondo!";
     //int puts(const char *str); https://en.cppreference.com/w/c/io/puts
     puts(stringa);
-    puts("Mondo");
+    puts(ptrstr);
+    puts("Come va?");
 
   return 0;
 } 
